@@ -1,0 +1,14 @@
+{% extends "default.html" %}
+{% block title %}mnist 숫자 모델{% endblock %}
+{% block content %}
+<div class="container">
+    <p style="height:100px;"></p>
+    <h1>mnist 숫자 인식 모델</h1>
+    <form action="/mnist" method="post" enctype="multipart/form-data">
+        <label for="formFileLg" class="form-label">Large file input example</label>
+        <input class="form-control form-control-lg" id="formFileLg" name="mnistfile" type="file">    <!--name**-->
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+{% endblock %}
